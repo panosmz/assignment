@@ -1,0 +1,8 @@
+﻿CREATE DATABASE [Assignment]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'Assignment', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\Assignment.mdf' , SIZE = 8192KB , FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'Assignment_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\Assignment_log.ldf' , SIZE = 8192KB , FILEGROWTH = 65536KB )
+ WITH LEDGER = OFF
+GO

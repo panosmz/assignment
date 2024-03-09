@@ -1,0 +1,14 @@
+@Assignment.API_HostAddress = https://localhost:44370
+
+POST {{Assignment.API_HostAddress}}/requestobj
+Content-Type: application/json
+
+{
+  "RequestArrayObj": [3, 1, 4, 5, 7, 2, 8, 8, 6]
+}
+
+###
+
+GET {{Assignment.API_HostAddress}}/countries
+
+###
