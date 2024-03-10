@@ -7,6 +7,7 @@ namespace Assignment.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Produces("application/json")]
     public class RequestObjController : ControllerBase
     {
         private ISecondLargestService _secondLargestService;
@@ -24,6 +25,20 @@ namespace Assignment.API.Controllers
         /// <summary>
         /// Retrieves the second largest element from the provided array.
         /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST /RequestObj
+        ///     {
+        ///        "requestArrayObj": [5, 10, 15, 20]
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="requestObj">The request object containing an array of integers.</param>
+        /// <returns>The second largest element in the array.</returns>
+        [HttpPost]
+        [SwaggerResponse(200, "The second largest element in the array.", typeof(int))]
+        [SwaggerResponse(400, "If the request body is empty, invalid, or there is no second largest element in the array.")]
         [HttpPost]
         public IActionResult GetSecondLargest([FromBody] RequestObj requestObj)
         {

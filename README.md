@@ -26,7 +26,13 @@ Set `Assignment.API` as the Startup Project.
 
 Run the app with `IIS Express`.
 
-Test the endpoints using `Assignment.API/Assignment.API.http` in Visual Studio.
+Test the endpoints using `Assignment.API/Assignment.API.http` in Visual Studio (**version 17.8** or later).
+
+or by visiting (https://localhost:44370/swagger)[https://localhost:44370/swagger].
+
+### Unit Tests:
+
+Included in the `Assignment.Tests` project.
 
 
 

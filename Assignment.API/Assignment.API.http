@@ -1,4 +1,4 @@
-@Assignment.API_HostAddress = https://localhost:44370
+ @Assignment.API_HostAddress = https://localhost:44370
 
 POST {{Assignment.API_HostAddress}}/requestobj
 Content-Type: application/json
