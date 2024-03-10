@@ -28,7 +28,7 @@ Run the app with `IIS Express`.
 
 Test the endpoints using `Assignment.API/Assignment.API.http` in Visual Studio (**version 17.8** or later).
 
-or by visiting (https://localhost:44370/swagger)[https://localhost:44370/swagger].
+or by visiting [https://localhost:44370/swagger](https://localhost:44370/swagger).
 
 ### Unit Tests:
 
